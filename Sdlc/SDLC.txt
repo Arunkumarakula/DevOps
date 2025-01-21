@@ -129,7 +129,7 @@ DevOps is a practice that allows a single team to manage the entire application 
 
 * Skills of a DevOps Engineer..!
 
-Tools: Git(vcs), Jenkins, Docker/Kubernetes, Ansible, Puppet, Grafana, Prometheus..etc
+Tools: Git(vcs), Jenkins(, Docker(contenerisation), Kubernetes(container orchestration), Ansible, Puppet(configuration), Grafana(monitoring), Prometheus(monitoring)..etc
 
 Network Skills(Establishing connection between container or portforwarding,containerorchestration) ,Peopleskills(communication) ,Customer skill ,Cloud awareness(Aws,Gcp,Azure)
 
