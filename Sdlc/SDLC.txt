@@ -1,21 +1,21 @@
 Software Development Life Cycle (SDLC)
-(Day-1)
+
 
 It is a systematic process used by software development teams to design, develop, test, and maintain software applications. It consists of a series of stages that guide the project from the initial concept to the final release.
 
-The main stages of SDLC:
+            The main stages of SDLC:
 
-Planning
+             * Planning
 
-Defining
+             * Defining
 
-Designing
+             * Designing
 
-Building
+             * Building
 
-Testing
+             * Testing
 
-Deployment
+             * Deployment
 
 
 SDLC Models:
@@ -93,50 +93,43 @@ Solution: DevOps
 
 * Development with DevOps Culture:
 
-  * Streamlined Deliveries.
+  1. Streamlined Deliveries.
 
-  * Teamwork collaboration.
+  2. Teamwork collaboration.
 
-  * Continuous monitoring and feedback.
+  3. Continuous monitoring and feedback.
 
 
 * What Exactly DevOps? :
 
 (Diagram)
-Code → Plan → Build → Dev → Release → Deploy → Ops → Operate → Monitor → 
+Code → Plan → Build → Release → Deploy → Operate → Monitor  
 
 
 * What is DevOps?
 DevOps is a practice that allows a single team to manage the entire application development lifecycle that is development, testing, deployment, and monitoring.
 
-(Code → Production)
+                  (Code → Production)
+
+
 
 * What does DevOps do?
 
-Integrates developers and operations teams.
+  1. Integrates developers and operations teams.
 
-Improves collaboration and productivity by:
+  2. Improves collaboration and productivity by:
 
-Automating infrastructure.
+  3. Automating infrastructure.
 
-Automating workflows.
+  4. Automating workflows.
 
-Continuously measuring application performance.
+  5. Continuously measuring application performance.
+
 
 
 * Skills of a DevOps Engineer..!
 
-Tools:
+Tools: Git(vcs), Jenkins, Docker/Kubernetes, Ansible, Puppet, Grafana, Prometheus..etc
 
-Git, Jenkins, Docker/K8s, Ansible, Puppet, Grafana, Prometheus
-
-Network Skills
-
-Other Skills:
-
-People skills
-
-Customer skill
-
-Cloud awareness
+Network Skills(Establishing connection between container or portforwarding,containerorchestration) ,Peopleskills(communication) ,Customer skill ,Cloud awareness(Aws,Gcp,Azure)
 
