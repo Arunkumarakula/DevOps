@@ -1,0 +1,142 @@
+Software Development Life Cycle (SDLC)
+(Day-1)
+
+It is a systematic process used by software development teams to design, develop, test, and maintain software applications. It consists of a series of stages that guide the project from the initial concept to the final release.
+
+The main stages of SDLC:
+
+Planning
+
+Defining
+
+Designing
+
+Building
+
+Testing
+
+Deployment
+
+
+SDLC Models:
+
+1. Waterfall Methodology
+
+
+2. Agile Methodology
+
+
+3. DevOps Methodology
+
+
+
+Waterfall:
+
+Requirements and gathering analysis
+↳ Design (tools, mockups)
+↳ Code Implementation
+↳ Testing
+↳ Deployment (release)
+↳ Monitoring (maintenance)
+
+Drawbacks:
+
+1. Flexibility: Difficult to make changes once a phase is completed.
+
+
+2. Long Delivery Time.
+
+
+3. No Early Feedback.
+
+
+4. Miscommunication with the different teams.
+
+
+
+Agile :
+
+In the Agile methodology, each project is broken up into several iterations.
+
+An iteration should be of the same duration (2 to 9 weeks).
+
+At the end of each iteration, a working product should be delivered.
+
+
+(Diagram):
+1st interation : Plan,design,develop
+2nd Iteration : plan,design,develop
+3rd Iteration : plan,design,develop
+
+Drawbacks:
+
+1. Time-taking (up to 2 weeks) if any changes.
+
+
+2. It can focus only on software development.
+
+
+3. There is no collaboration between teams.
+
+
+
+
+* Limitations of Agile :
+
+Developer’s Team: “Code is working on my server!” (Wants changes)
+
+Operation’s Team: “There is a problem in code!” (Wants stability)
+
+
+Solution: DevOps
+
+
+* Development with DevOps Culture:
+
+  * Streamlined Deliveries.
+
+  * Teamwork collaboration.
+
+  * Continuous monitoring and feedback.
+
+
+* What Exactly DevOps? :
+
+(Diagram)
+Code → Plan → Build → Dev → Release → Deploy → Ops → Operate → Monitor → 
+
+
+* What is DevOps?
+DevOps is a practice that allows a single team to manage the entire application development lifecycle that is development, testing, deployment, and monitoring.
+
+(Code → Production)
+
+* What does DevOps do?
+
+Integrates developers and operations teams.
+
+Improves collaboration and productivity by:
+
+Automating infrastructure.
+
+Automating workflows.
+
+Continuously measuring application performance.
+
+
+* Skills of a DevOps Engineer..!
+
+Tools:
+
+Git, Jenkins, Docker/K8s, Ansible, Puppet, Grafana, Prometheus
+
+Network Skills
+
+Other Skills:
+
+People skills
+
+Customer skill
+
+Cloud awareness
+
