@@ -133,3 +133,85 @@ Tools: Git(vcs), Jenkins(CI_CD), Docker(contenerisation), Kubernetes(container o
 
 Network Skills(Establishing connection between container or port forwarding,container orchestration) ,Peopleskills(communication) ,Customer skill ,Cloud awareness(Aws,Gcp,Azure)
 
+
+
+* DevOps Lifecycle *(Day-1) 22/01/25
+
+Plan - (1)
+
+First stage of the DevOps cycle, where you plan, track, visualize your project before working/starting it.
+
+Tools:
+
+1. Jira 2. Trello
+
+
+
+Code - (2)
+
+Second stage of the DevOps cycle, where the developers write their code.
+
+Tools:
+
+1. Git 2. Subversion 3. Eclipse
+
+
+
+Build - (3)
+
+Build is a pre-release version, identified by a build number rather than by a release number.
+
+Tools:
+
+1. Maven 2. Gradle 3. Apache Ant 4. Jenkins
+
+
+
+Test - (4)
+
+Process of executing automated tests as part of the software delivery pipeline in order to obtain feedback on the business risks associated with a software release as rapidly as possible.
+
+Tools : 1.Junit 2.Jmeter 3.se(selinium)
+
+
+
+Release - (5)
+
+This phase helps to integrate code into a shared repository, using which you can detect and locate errors quickly and easily.
+
+Tools:
+
+1. Bamboo 2. GitLab 3. Travis CI
+
+
+
+Deploy - (6)
+
+Manage and maintain development and deployment of software systems and servers in any computational environment.
+
+Tools:
+
+1. AWS 2. Ansible 3. Chef
+
+
+
+Operate - (7)
+
+This phase is to keep the system upgrade with the latest updates.
+
+Tools:
+
+1. AWS 2. Ansible 3. Chef
+
+
+
+Monitor - (8)
+
+It ensures the application is performing as desired and the environment is stable. It quickly determines when a service is unavailable and understanding the underlying cause.
+
+Tools:
+
+1. Nagios 2. Sensu 3. Splunk
+
+
+
