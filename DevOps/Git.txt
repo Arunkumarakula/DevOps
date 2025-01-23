@@ -65,7 +65,6 @@
 
 
  * what basic work flow of git..?
-
     - Git clone
     - working directory
     - staging area
@@ -109,11 +108,9 @@
 
 
 
-
 4. Clone:
 
    - The clone command creates a copy of an existing remote repository inside the local repository.
-
 
 
 5. Commit:
@@ -121,11 +118,9 @@
   - The commit command commits all the files in the staging area to the local repository.
 
 
-
 6. Push:
 
   - The push command pushes all the changes made in the local repository to the remote repository.
-
 
 
 7. Fetch:
@@ -133,7 +128,6 @@
   - The fetch command collects the changes made in the remote repository and copies them to the local repository.
 
   - This command doesn’t affect your workspace.
-
 
 
 8. Pull:
@@ -144,9 +138,7 @@
 
 
 
-
-
-     ** Branching stratagies in GitHub **      (Day-3)
+      ** Branching stratagies in GitHub **      (Day-3)
 
 
 
@@ -164,7 +156,6 @@
  5. Feature :for new features
 
  6. Hotfix :fixes the bugs or issues in production
-
 
 
 
