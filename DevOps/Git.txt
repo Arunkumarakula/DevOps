@@ -64,10 +64,20 @@
 
 
 
+ * what basic work flow of git..?
+
+    - Git clone
+    - working directory
+    - staging area
+    - local repository
+    - Remote repository(remote repo is a server where all the collaboraters upload's changes made to the files)
+
 
 
 * What is Git?
   Git is an open-source distributed version control system (DVCS) that records changes made to the files, laying emphasis on speed, data integrity, and distributed, non-linear workflows.
+
+  - In git (Dvcs) everything will be track's like interesting or modifying a file , deletion..etc
 
 
 
@@ -131,5 +141,63 @@
   - The pull command, like fetch, gets all the changes from the remote repository and copies them to the local repository.
 
   - Pull merges those changes into the current working directory.
+
+
+
+
+
+     ** Branching stratagies in GitHub **      (Day-3)
+
+
+
+ 1. Base branch : The default branch is considered the “base” branch in your repository (main , master,major..)
+
+ 2. Develop (development branch) : development branch called as develop in workflows like Git Flow in Git hub ,you can perform a variety
+    of tasks related to collaborative development.
+
+   - we can do some common things with development branch like "Collaborate with the Team, Resolve the conflicts"
+
+ 3. QA(Quality Assurance testing) : used for testing and validating code before it's merged into the production branch.
+
+ 4. Release :for preparing new releases
+
+ 5. Feature :for new features
+
+ 6. Hotfix :fixes the bugs or issues in production
+
+
+
+
+* Pull Requst : A pull request is a way to propose your changes to a project, get feedback from others, and then merge those changes into the main code.
+
+
+* Why use pull requests?
+
+ - Code Review: Allows others to review your changes before they are added to the main project, ensuring better quality and fewer bugs.
+
+ - Collaboration: Helps teams collaborate on code while maintaining a clean and stable codebase.
+
+ - History & Discussion: Pull requests keep a record of the discussion around a change and the history of why certain decisions were made.
+
+
+
+* PAT (Personal Access Token) : In GitHub is a secure way to authenticate yourself when interacting with GitHub’s API 
+                                                     (or)
+                               performing Git operations (like cloning, pushing, or pulling) without using your GitHub password.
+
+
+
+
+* Fork : In GitHub, a fork is a copy of a repository that you create under your own GitHub account. Forking allows you to freely 
+         experiment with changes without affecting the original repository.
+
+
+
+* Tags : A Git tag is a way to mark specific commits in your project’s history.
+
+    - Tags are used to capture specific versions of your project, making it easy to refer back.
+
+
+
 
 
