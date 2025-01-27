@@ -190,5 +190,21 @@
 
 
 
+* Git cannot automatically adds new files to the repository and starts tracking them.
+
+
+* In git Commit history is never automatically deleted.
+
+
+* In Git, a branch is A separate version of the main repository.
+
+
+* git fetch origin command to get all the change history of the remote repository.
+
+
+*Git Pull is a combination of fetch and merge.
+
+
+
 
 
