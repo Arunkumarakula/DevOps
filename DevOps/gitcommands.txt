@@ -175,4 +175,35 @@
 51. git commit --amend --author "username <email>" : command used to change the author of latest commit
 
 
-52. 
+52. git --version : Command used to check git version
+
+
+53. git add --all : command to add all files and changes of the current folder to the staging environment of the Git repository
+
+
+54. git help --all : command used to see all the possible commands
+
+
+55. .gitignore : command used to ignore the files which we no need to display
+
+
+56. git branch -a : List all local and remote branches of the current Git
+
+
+57. git branch -r : List only remote branches of the current Git
+
+
+58. *.temp : In .gitignore add a line to ignore all .temp files
+
+
+59: temp/ : In .gitignore add a line to ignore all files in any directory named temp
+
+
+60. temp?.log : In .gitignore add a single line to ignore all files named temp1.log, temp2.log, and temp3.log
+
+
+61. git revert HEAD --no-edit : revert the latest commit, skipping the commit message editor
+
+
+62. 
+
