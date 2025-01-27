@@ -205,5 +205,8 @@
 61. git revert HEAD --no-edit : revert the latest commit, skipping the commit message editor
 
 
-62. 
+62. git restore <deleted file> : If you deleted a file and want to restore it 
+
+
+63. rm -rf .git : To remove .git folder
 
