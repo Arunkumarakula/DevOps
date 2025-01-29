@@ -83,13 +83,15 @@
 
                  4. package: Packages the compiled code into a deployable format (e.g., JAR, WAR, EAR).
 
-                 5. verify: Verifies that the packaged code meets the quality criteria 
+                 5. Integrtion test : process and deploy the package into an environment where integration tests can be run
+
+                 6. verify: Verifies that the packaged code meets the quality criteria 
                             
                           eg: running integration tests or checks.
 
-                 6. install: Installs the packaged code into the local Maven repository, making it available for other projects on the same machine.
+                 7. install: Installs the packaged code into the local Maven repository, making it available for other projects on the same machine.
 
-                 7. deploy: Deploys the packaged code to a remote repository (eg: Maven Central or a private repository) for sharing with other developers or applications.
+                 8. deploy: Deploys the packaged code to a remote repository (eg: Maven Central or a private repository) for sharing with other developers or applications.
 
 
 
@@ -188,6 +190,26 @@
 
 
 * pre-requasites : 
+
+   1. JDK (Java Development Kit) installed.
+
+   2. Maven installed on your system.
+
+   3. Set MAVEN_HOME and update the PATH environment variable.
+
+   4. Internet access for downloading dependencies.
+
+
+
+
+* What is .m2 folder ..?
+
+    - The .m2 folder is Maven's local repository where it stores downloaded dependencies and plugins. It helps avoid re-downloading artifacts each time you build a project.
+     
+     - It's located in your home directory (eg : ~/.m2)
+
+
+
 
 
 
