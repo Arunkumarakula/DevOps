@@ -1,4 +1,6 @@
-* Steps to Push Files After Moving Them to a Different Folder in Git
+                            * Guide1 *(Steps to Push Files After Moving Them to a Different Folder in Git)
+
+
 
 
 * If we moved a file from one folder to another folder,then while pushing to GitHub repository it show's deleted files .
@@ -29,4 +31,10 @@
 
 7. git push origin main 
 
+
+
+
+                                                       
+                                   
+         
  
