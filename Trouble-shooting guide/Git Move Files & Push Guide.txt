@@ -1,0 +1,32 @@
+* Steps to Push Files After Moving Them to a Different Folder in Git
+
+
+* If we moved a file from one folder to another folder,then while pushing to GitHub repository it show's deleted files .
+
+  Now here we have some commands to troubleshoot:
+
+
+1. git add -u (Now we have to stage the changes)
+
+       - The -u option stages any changes to tracked files, including deletions.
+
+
+
+2. git status (we have to check status files are in staged or unstaged)
+
+
+3. git commit -m "file name" ( commit the changes)
+
+
+4. git pull origin main (pull the latest changes from the remote before pushing your own changes)
+
+
+5. git add "file-name" 
+
+
+6. git commit -m "file-name"
+
+
+7. git push origin main 
+
+ 
