@@ -1,0 +1,97 @@
+                                        * Hands on Basic project with maven *
+
+
+Step 1: Open git-bash and direct to Desktop or any drive
+
+        eg : Cd Desktop
+
+
+Step 2: mvn archetype:generate -DgroupId=com.example -DartifactId=arun-project -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+       
+        - Edit above code (Dartifactid= "your folder Name ")
+
+        - Now it will create a folder with your given name 
+
+
+Step 3: check the folder is created or not and then direct to created folder (cd arun project)
+
+        eg : ls (arun project)
+
+
+
+Step 4: Now you can check pom.xml and src files in created folder
+
+
+Step 5 : Now open pom.xml file and edit jar into war to get .war file
+
+
+Step 6: give a command "mvn validate" because Validates the project setup to ensure all necessary information is available and correct. after build sucsess we have to give mvn compile
+
+
+Step 7: give a command "mvn compile" because Compiles the source code of the project. after build success we have to give mvn compile
+
+
+Step 8: give a command "mvn test" because Runs unit tests on the compiled source code using test. after build success we have to give a command mvn package
+
+
+Step 9: give a command "mvn package" because Packages the compiled code into a deployable format (e.g., JAR, WAR, EAR). Now it's shows build failure then we have to edit pom.xml
+
+
+Step 10 : Edit pom.xml for installation of depencies because above mvn package fails due to not installed some dependencies,then we have to edit pom.xml 
+
+          - Now we have to clear previous script and add bwlow script
+
+
+          <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.example</groupId>
+  <artifactId>helloworld</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <build>
+        <plugins>
+            <!-- Maven Compiler Plugin configuration -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version> <!-- You can use a version based on your Maven setup -->
+                <configuration>
+                    <source>1.8</source> <!-- Change this to your desired Java version -->
+                    <target>1.8</target> <!-- Change this to your desired Java version -->
+                </configuration>
+            </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.3.2</version> <!-- Use the latest version -->
+            <configuration>
+                <failOnMissingWebXml>false</failOnMissingWebXml>
+            </configuration>
+        </plugin>
+    </plugins>
+  </build>
+  <name>helloworld</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
+
+
+
+
+Step 11: NOw try to give maven package command , it will build the code and creates .war file in the tageget folder
+
+
+Step 12: Check the target folder .war file is created or not..!
+
+             
+
+
+ 
