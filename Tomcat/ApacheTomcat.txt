@@ -1,0 +1,86 @@
+                                         * Apache Tomcat on Windows *
+
+
+
+* Apache Tomcat is an open-source web server and servlet container used to deploy Java web applications.
+
+
+
+* Prerequasites of Apache Tomcat :
+
+      1. Java JRE(java runtime environment) installated and configured
+
+      2. Administrator previlages
+
+      3. Operating system.
+
+
+
+* How to Install Tomcat on Windows :
+
+  Step 1: Download Tomcat for Windows
+     
+      - Browse to the official Apache Tomcat website,Locate the Download section and click the latest Tomcat version available.
+
+      - click the download link for the Windows Service Installer or the 32bit/64bit Windows zip file
+
+
+
+ Step 2: Install Tomact
+
+      - Install Tomcat via the Windows Service Installer for an automated and wizard-guided experience
+
+      - After Downloading of the zip.file,depending on your windows version,unzip the downloaded file, Right-cliclk the file and select   
+
+        extract all.
+
+      - Navigate to the unzip file of apache tomcat 
+
+
+
+* By default apache tomcat port number is 8080
+
+     - if at all we wanted to change the default port number we need to go "apache tomacat(folder)-conf-server.xml
+
+
+
+* server.xml(file)
+
+       < connector port="8080" protocol ="HTTP/1.1"
+                 connectionTimeout = "20000"
+                      redirectport = "8443"/>
+
+
+  - change the connector port number to any number between 1024 and 65535
+
+  - port is used to approach (or) access the application 
+
+
+
+* How to start and stop apache tomcat
+
+   -To Start : Apache Tomcat-->bin-->startup (windows batch file)
+
+
+   - To stop or shutdown: Apache Tomcat-->bin-->shutdown (windows batch file)
+
+   - For configurational changes : Apache Tomcat-->conf
+
+   - For hosting of the application (Artifacts / Deployable packages)
+               
+             - Apache tomcat-->Webapps
+
+   - For Logs : Apache tomcat-->logs(Apache Tomcat and also application which is running inside Tomcat)
+
+
+
+* We can access apache tomcat via localhost : 8080 or 127.0.0.1:8080
+
+
+
+
+
+
+
+
+
