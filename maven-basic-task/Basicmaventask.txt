@@ -6,7 +6,7 @@ Step 1: Open git-bash and direct to Desktop or any drive
         eg : Cd Desktop
 
 
-Step 2: mvn archetype:generate -DgroupId=com.example -DartifactId=arun-project -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+Step 2: mvn archetype:generate -DgroupId=com.example.helloworld -DartifactId=helloworld -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
        
         - Edit above code (Dartifactid= "your folder Name ")
 
