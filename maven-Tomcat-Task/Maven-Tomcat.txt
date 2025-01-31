@@ -1,0 +1,99 @@
+                                                           * Maven-Tomcat * 
+
+
+   
+                                              * Generating an artifact using Apache maven build tool *
+
+
+Step 1: open git bash and direct to desktop or any drive like C,E,F-drives
+
+            eg: cd Desktop
+
+
+Step 2: Now enter a command which is mentioned below because to create a project(Hello-world)
+
+       - mvn archetype:generate -DgroupId=com.example.helloworld -DartifactId=helloworld -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+
+       - If you want edit Dartifactid to create a project with your own name then change ( DartifactId=my-project and DgroupId=com.example.my-project) 
+         
+                               NOTE : if you edit's the name make sure give the DgroupId and Dartifact must be same name 
+
+
+
+Step 3: Once your Entered above command it show's build success then check folder is created or not..!
+
+          - Now once check the folder what files are created inside (eg : pom.xml,src)
+
+
+Step 4: check the pom.xml file (groupid,artifactid-name should be same) and check packaging type (war/jar)
+
+           eg : vi pom.xml
+
+
+
+Step 5: Now you can give a command "Mvn package" , because Packages the compiled code into a deployable format (e.g., JAR, WAR, Ear)
+
+       - when we give a command mvn package it will generate the target file.
+
+
+Step 6: Open Target file in this folder artifacts will be their
+       
+         eg : cd Target and ls ( artifact like my-project.war)
+
+
+
+
+
+                                                           * Deploying an Artifact with Tomcat *
+
+
+
+  * we have an Two options to deploy an artifact in Aapache Tomcat :
+  
+     1. Manually 
+
+          Step 1: Open apache Tomcat Folder 
+
+          Step 2: Open webapps folder and paste an artifact 
+
+          Step 3: Open bin folder and start the apache tomcat server
+
+          Step 4: Open Browser and serach the port (localhost:8080) it will opens apache tomcat webpage
+ 
+          Step 5: Give the port with war file name (localhost:8080/my-project).
+
+                 - Now show the project output.
+
+
+    
+     2. GUI(Graphical user Interface)
+
+         Step 1: If your server is in running stage then we have to shutdown the server 
+ 
+                  eg : Apache Tomcat(folder) --> Bin(folder) --> shutdown
+
+
+        Step 2: Now we have to open Conf folder to edit tomcat user.xml file to access an gui page
+
+                  eg: Apache Tomcat(folder) --> Conf(folder) --> Tomcat-users.xml(open with text Editor like vi)
+
+                   - Now we have to Edit the user-name and users password 
+
+                   NOTE : don't edit the user-name=robot
+
+
+      Step 3: After Edit's the user.xml file then start the tomcat server and hit with the localhost:8080 port on browser,it will opens the tomcat web page
+
+      Step 4: now choose manageer app,once opens the path it will ask user-name and password(give credentials which we has modified in user.xml file)
+
+      Step 5: Now it will opens the Tomcat "Web Application Manager" , then we can deploy artifact in "WAR file to deploy" option.
+
+      Step 6: WAR file to deploy, --> click on choose file open and select an war file then click on deploy option.
+
+      Step 7: After deployed an artifact, the deployed artifact will be display's in manager app page.
+
+      Step 8: Now you can click on artifact which you deployed (now it will show's the output of your project) 
+
+ 
+
+
