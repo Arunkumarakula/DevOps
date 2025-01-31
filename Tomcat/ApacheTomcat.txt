@@ -74,8 +74,94 @@
 
 
 
-* We can access apache tomcat via localhost : 8080 or 127.0.0.1:8080
+* We can access apache tomcat via localhost:8080 or 127.0.0.1:8080
 
+
+
+* Apache Tomcat Folder structure :
+
+  - Bin(Binaries) : To stop or Start the apache tomcat server
+
+  - Conf(configurations) : To configure or modify any file eg: server.xml(To modify default port number)
+
+  - Webapps : Used to deploy artifacts such as jar/war/ear
+
+  - Lib(Libraries) :contains libraries that Tomcat needs to function properly
+
+  - temp : Temporary files that Tomcat uses while running
+
+  - logs : These logs provide information about server startup, errors, and request processing.
+
+
+
+* How to access the application URL(127.0.0.1:8080) OR (localhost:8080)
+
+         eg : localhost:8080/myproject   (Here where myproject is known as artifact)
+
+
+
+* command to get the project:
+
+         - mvn archetype:generate -DgroupId=com.example.helloworld -DartifactId=helloworld -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+
+
+
+
+* How we can place the artifact from the maven project of target folder to apache tomcat webapps folder (using terminal)
+
+       - cp <path where artifact> <path where webapps of tomcat>
+
+                            (or)
+
+       - cp <source> <destination>
+
+                          (or)
+
+        - <destination> cp /<source>
+
+
+
+   - when we copy a files always we should give the forward slash(/)
+
+
+
+* If we did any changes in configuration file (eg : 8080 to 8888) then we need to restart the tomcat server.(stop and start)
+
+
+* To change the port number of apache tomcat we should stop the server.after changing port number you can start the server
+
+   Reason : If the server is in running stage it will not receive modified port
+
+
+
+* To deploy the application we have two ways 
+
+   1. we can deploy an artifact manully in apache tomcat "webapps" folder 
+
+   2. we can deploy an artifact by using the tomcat "gui"(graphical user interface)
+
+
+
+* How can we access the apache tomcat gui:
+
+   - We need to go apache tomcat home folder -->conf
+
+   - modify "tomcat-user.xml" (using any text editor eg:vi)
+
+   - vi tomcat-user.xml
+
+          modify (<user username="admin">)
+
+   - need to uncomment those lines <!-- & -->
+
+   - once you modify user.xml file you need to save and quite (:wq!)
+
+
+
+
+
+
+  
 
 
 
