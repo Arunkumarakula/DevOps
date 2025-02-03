@@ -1,0 +1,168 @@
+                                                        * JBoss *
+
+
+
+
+* What is JBoss..?
+
+  → JBoss ia a powerful open-source java application server developed by Redhat
+
+  → It helps in deploying and managing Java-based applications in a scalable and reliable environment.
+
+
+
+
+* How to Download JBos on windows.
+
+  → wildfly.org/downloads/
+
+       (current version is 35.00 final)
+
+       (widly distribution-zipfile)
+
+
+
+
+* We have to port numbers in JBoss:
+
+    → 9990 for Admin/Management   (<localhost:9990>)
+
+    → 8080 for apllications/artifacts  ( <localhost:8080>/application-Name)
+
+
+
+* * Folder structure of the WildFly:
+
+   Domain
+     ↓
+   Modules
+     ↓
+   Welcome-content
+     ↓
+   Docs
+     ↓
+   Bin
+     ↓
+   APPclient
+
+
+
+* To start the JBoss WildFly:
+  
+    → Go to the home folder of the WildFly, then go to 'bin'.
+   
+    → Click on the file 'standalone' (Windows Batch file).
+
+
+
+* How to shutdown the JBoss WildFly:
+
+    → One way is to close the black window where the 'standalone' is running.
+
+
+
+* How to create Management Console user creation:
+
+   → <home folder of WildFly> > cd bin
+
+   → File name: add-user (Windows batch file)
+   
+   → Once you double-click on 'add-user', it will ask you the following questions:
+
+   What type of user do you wish to add?
+
+     ① Management user (mgmt-users.properties)
+    
+     ② Application user (application-users.properties)
+
+   → By clicking any option, it will show how to create a user with a new login credential.
+
+
+
+* How to access the WildFly:
+
+  → Admin management console: <URL: 9990>
+
+  → Give username & password to login and to launch the WildFly web server.
+
+
+
+
+→ One of the folder structures is standalone, where we will be having the configuration, deployment, and logs.
+
+        * Standalone → Configuration, Deployment, Logs
+
+
+
+→ Configuration: Where we will be having configurations of applications, users, and specifics.
+
+        Example: mgmt-users.properties & mgmt-groups.properties
+
+
+
+→ Logs: standalone > log → Logs of the WildFly
+
+
+
+→ Deployment: A deployment represents anything that can be deployed.
+
+       Example: An application such as EJB, JAR, WAR, EAR, or any kind of standard archive such as RAR or JBoss-specific deployment into a server.
+
+
+
+→ You can use drag and drop to add new content or replace existing deployments.
+
+   Simply drag one or several files onto the deployment column. If there is already a deployment with the same name, the deployment will be replaced; otherwise, the deployment will be added.
+
+
+→ The deployments added by drag and drop will be enabled by default.
+
+
+
+* In left pane page , these will be three options under deployments :
+
+      1.upload Deployment
+
+      2.Un-managed Deployment
+
+      3.create empty Deployment
+
+
+
+* How to deploy the application (or) artifacts :
+
+   one way:
+
+  1. copying the war file and pastig it deployment folder of wildfly (Home of wildfly → standlone → Deployments)
+
+
+
+* Anotherway :
+
+  2. cp <artifact source path> <destination of deployments of wildfly>
+
+
+
+* Anotherway :
+
+  3. JBoss wildfly gui → upload Artifact
+
+
+
+
+
+* How can we change default port numbers of wildfly..?
+ 
+   → Open wildfly folder then open "standalone"  and then "configuration" folder then change a ports in standalone.xml and standalone-full.xml(files) in the "socket-binding"
+
+       Eg : wildfly folder  → Standalone(folder) → configuration(folder) → standalone.xml (or) standalone-full.xml(files)
+
+
+
+* How to shutdown the JBoss wildfly..?
+
+  → wildfly folder → bin(folder) → JBoss-cli(windows batch file) 
+
+
+    
+
