@@ -1,0 +1,84 @@
+                                          * Deployment on windows and GUI *
+
+
+* Step 1: Download the jBoss the web-server using ( wildfly.org download )
+
+         - Scroll down and download new version zip-file
+   
+         - After Download the folder extract the folder
+
+
+
+* Step 2 : Start an Widlfly - JBoss server 
+
+           - open downloaded wildfly folder then choose bin (folder) and choose in the bin folder an "standalone" windows batch file and 
+
+             double click on it.
+
+         
+
+
+* Step 3: Here have an ways to deploy an application or project artifact
+
+          1. Deploy an artifact using the Wildfly folder(manuall)
+
+              - choose wildfly folder then choose "standalone" folder and "Deployemts" folder 
+
+              - In the Deployment folder we can paste our articat(.war/.jar)
+
+
+
+* Step 4: Now access the application using localhost:8080/artifact file name (Browser)
+
+          - If we given a localhost:8080(it shows the wildfly welcome page)
+
+
+
+* Step 5: Deploy with using wildfly-gui
+
+          - http://localhost:9990/console (if we open with this url it asks the "username and password")
+
+          - Now we need to configure "user-name and password" in the "bin" folder then "add-user" windows batch file
+
+          - while creating a user it will some questions like :
+
+             1. What type of user do you wish to add?
+              
+                a) Management User (mgmt-users.properties)
+                b) Application User (application-users.properties)
+
+             2. User-name
+
+             3. Password
+
+             4. It asks sure or not..!
+
+             5. Re-enter password
+
+        Note : Before going to modify above configuration we can stopn the wildfly server
+
+            - Now start the serever using bin folder - standalone (windows batch file)
+
+            - Check with the port(localhost:9990/console/) , it will open the login page
+
+            - In the login page we can enter the login details witch we modified in the "add-user" file 
+
+            - after login it will open the wildfly "Homepage"
+
+* Now here we can deploy the application or artifact using "deployment" option which is showing in the Wildfly homepage
+
+            - click on deployment then select an option "upload-deployment",choose a file and click on "next" and click on "finish"
+
+            - In deployment page it show's the deployed application then we can view from their deployed application.
+
+
+
+
+
+
+
+
+
+
+
+

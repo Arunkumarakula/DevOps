@@ -157,11 +157,157 @@
 
        Eg : wildfly folder  → Standalone(folder) → configuration(folder) → standalone.xml (or) standalone-full.xml(files)
 
+ Note: we can check what changes made in code while modifying port in the browser(https://www.diffnow.com/compare-clips)
+
 
 
 * How to shutdown the JBoss wildfly..?
 
   → wildfly folder → bin(folder) → JBoss-cli(windows batch file) 
+
+
+
+                       04/02/25
+
+
+Configuration: Things to keep in mind before changing configuration changes:
+
+1. Where to change
+
+
+2. Backup
+
+
+3. How to change
+
+
+4. Try & Experiment in Local Environments
+
+
+5. Documentation
+
+
+
+
+* Snapshot/Backup:
+
+
+- For Wildfly → Configuration Snapshot
+
+- Home Folder of Wildfly → standalone → configuration → standalone.xml.history
+
+- Filename: standalone-v1
+
+     Eg: Port number change → standalone-port-change-v2
+
+- Need to rename the original or existing file and then replace the customized one as per requirement/change.
+
+
+
+
+* Different Status of the Artifacts Deployed in Wildfly:
+
+
+- In Wildfly, deployed artifacts can have various status states, including:
+
+    - Deployed: The application is successfully running on Wildfly server and accessible to users.
+
+    - Undeployed: The application has been removed from the server and is not currently running.
+
+    - Failed: The deployment process encountered an error, and the application is not running.
+
+    - Disabled: The application is intentionally stopped by the administrator and cannot be accessed until enabled.
+
+    - Suspended: The application is temporarily paused and can be resumed later.
+
+    - Redeploying: The application is currently being updated with new code and is not fully available while the redeployment process is ongoing.
+
+
+
+
+* Accessing Deployment Status:
+
+  Wildfly Management Console:
+
+    - You can view the status of deployed artifacts through the Wildfly admin console, which provides a list of deployments with their current state.
+
+
+
+* CLI (Command Line Interface):
+
+   - Using the Wildfly command-line interface, you can query the status of deployments with management commands.
+
+   - Indicates whether the application is currently running, not deployed, encountered an error during deployment, intentionally deactivated, temporarily paused, or in the process of being
+
+     re-deployed with updates.
+
+
+
+
+* Domain & Host Controllers in Wildfly:
+
+    - In JBoss Wildfly, a domain controller is the central management point for a group of servers within a domain, responsible for maintaining the overall configuration and policy.
+
+    - Whereas a host controller is a separate process running on each server within the domain, communicating with the domain controller to manage the individual server instances on that 
+
+      host machine.
+
+    - Essentially, the domain controller dictates the overall configuration, and the host controllers execute those configurations on their respective servers.
+
+
+
+* Key Points about domain and host controllers:
+
+  Domain Controller:
+
+    - Acts as the central management point for the entire domain.
+
+    - Stores the domain-wide configuration in a file called domain.xml.
+
+       (Home folder → Domain → Configuration → domain.xml)
+
+
+    - Responsible for distributing configuration changes to all host controllers within the domain.
+
+
+* Host Controller:
+
+  - Manages the application server instances running on a specific host.
+
+  - Reads its configuration from a host.xml file specific to that host.
+
+       (Home folder → Domain → Configuration → host.xml)
+
+
+   - Communicates with the domain controller to receive configuration updates and start/stop server instances.
+
+
+   Note: Domain refers to a master centralized setup where we can manage multiple servers.
+
+
+
+
+* Snapshot backup (raw code file):
+
+ - File Structure: Home → Standalone → Configuration → Standalone.xml → History
+
+Snapshot Process:
+
+   - standalone.xml(Contains modified port number)
+
+      (Example: standalone_04Feb2025)
+
+
+   - If the code is messed up, retrieve the raw code backup to ensure smooth system functionality without disruption.
+
+
+Backup Snapshot:
+
+standalone.v1 → standalone.xml (raw code ORIGINAL FILE)
+
+The original code file is stored without any changes as a backup/snapshot for recovery purposes.
+
+
 
 
     
