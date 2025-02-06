@@ -1,0 +1,94 @@
+                                          * Jenkins Installation on windows *
+
+
+
+* Step 1: Browse to google and search for Jenkins official website (https://www.jenkins.io/download/)
+
+         → Under the downloading JENKINS page section is a list of installers for the long-term support(LTS) version of Jenkins.
+
+         → Now click on "window's" text link to brgin the download
+
+         → once you click on windows text link it will start the downloading.
+
+         → downloading file such as "Jenkins.msi"
+
+
+
+* Step 2: After Downloaded to your local, go to downloaded folder double click on Jenkins file which is of type windows installer package
+
+            → setup wizard starts click next to proceed
+
+            → select the install destination folder and click on next to continue
+
+            → under the run service as a local or domain user
+
+            → while setuping need to install jdk 21 version and set system environment path
+
+            → Under the Run Service as a local or domain user option, add the domain username and password for the account you want to run Jenkins with. Click Test credentials To verify the login data, then click Next proceed.
+
+
+           Note: go for the first option Run Service as a local System.
+
+            → Enter the port number you want Jenkins to run on, click Test Port to check if the selected port is available. Click Next to continue.
+
+              (Default Port Number of Jenkins is 8080.)
+
+
+            → Select the directory where Java is installed on your system and click on Next to proceed.
+
+            → Select the features you want to install with Jenkins and click on Next to continue.
+
+            → Click Install to start the installation process.
+
+
+
+* Step 3: After completing the installation process, you have to unlock Jenkins before you can customize and start using it.
+
+
+           → Browse: localhost:[port-number] (e.g., localhost:8080).
+
+           → Navigate to the location on your system specified by the unlock Jenkins page.
+
+           (Copy the password from location [entire path]: C:\ProgramData\Jenkins\.jenkins\secrets\initialAdminPassword, where the admin password is stored in a file.
+
+             To read the data of that file, use the cat (Command).)
+
+           → Copy the password from the initial admin password file (e.g., Gd2dZd... Alphanumeric).
+
+           → Paste the password in the Administrator password field on the unlock Jenkins page and click Continue to proceed.
+
+           → once you unlock Jenkins, customize and prepare the Jenkins environment.
+
+
+
+* Step 4:
+
+      → Click on the Install suggested plugins button to have Jenkins automatically install the most frequently used plugins.
+
+      → After Jenkins finishes installing the plugins, enter the server information on the Create First Admin User page. Click Save and Continue to proceed.
+
+                  Username:
+
+                  Password:
+
+                  Confirm Password:
+
+                  Full Name:
+
+                  Email Address:
+
+
+      → On the Instance Configuration page, confirm the port number you want Jenkins to use and click Save and Finish to complete the initial customization.
+
+
+
+
+* How to stop Jenkins server on Windows?
+
+       → Go to Services in Windows (search option).
+
+       → Find the service and select Jenkins.
+
+       → Once selected, click on it. This shows the Turn off option.
+
+
