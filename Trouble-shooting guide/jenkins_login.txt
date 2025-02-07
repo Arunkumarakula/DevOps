@@ -7,3 +7,11 @@ If we faced login issues with Jenkins(for new server) and if you want to start J
     c(drive) - programm data - Jenkins(files)
 
 After this download the Jenkins and create user. 
+
+
+
+          (or)
+
+ This is best way.
+
+configure user.xml file then correct it from false-true
