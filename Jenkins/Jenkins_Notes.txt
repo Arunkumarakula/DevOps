@@ -183,8 +183,9 @@ Tabs--→      |
 * We can dowmload Jenkins on windows using the URL(https://www.jenkins.io/download/) then we can choose LTS(Long Term Support)
 
 
+* We can restart by safe with using the url : localhost:8080\safeRestart
 
-
+* slaves, Nodes, Agents this terminologies are same.
 
 
 
