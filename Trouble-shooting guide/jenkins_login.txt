@@ -1,0 +1,9 @@
+If we faced login issues with Jenkins(for new server) and if you want to start Jenkins creation from scratch
+
+     - eg: Jenkins login password forgot
+
+- we can delete Jenkins program data files
+
+    c(drive) - programm data - Jenkins(files)
+
+After this download the Jenkins and create user. 
