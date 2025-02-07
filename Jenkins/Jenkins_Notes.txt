@@ -1,195 +1,217 @@
-                                                  * JENKINS *
+
+                                                 *JENKINS*
+
+* Importance of Continuous Integration
+
+  1.Improves Quality: Improves the quality by running multiple unit tests and analyzing various static code.
+   
+                      - Ensuring that the code is always reliable, maintainable, and bug-free.
 
 
- → Importance of Continous Integration :
-
-     1. Improves Qulaity : Improves the quality by running multiple unit tests and analysing various static code
- 
-                           - ensuring that the code is always reliable, maintainable, and bug-free.
+  2.Increases Productivity: Automating the build of code saves a lot of time, thereby increasing productivity.
 
 
-    
-     2. Increases productivity : Automating build of code saves a lot of time, there by increasing productivity.
-
-     3. Reduces Risk : Eliminate the risk of potential human errors by automating task.     
-
-
-
- 
-* Features of Jenkins :
-
-      1. Easy installation process
-
-      2. provides advance security
-
-      3. optimized performance
-
-      4. upgrades are easily available
-
-      5. lightweight container support
-
-      6. Distributed Team-Management
-                       
-
-
-* What is continuous Integration : It is the process of automating the building and testing of code, each time one of the team member commits to version control
-
-    → CI (Continous Integration)
-
-    → CD (Continous Delivery as well as Deployent), Delivery is also known as release.
+  3.Reduces Risk: Eliminates the risk of potential human errors by automating tasks.
 
 
 
+* Features of Jenkins:
 
-                             commit		     Initiate CI process
+   1. Easy installation process
+
+   2. Provides advanced security
+
+   3. Optimized performance
+
+   4. Upgrades are easily available
+
+   5. Lightweight container support
+
+   6. Distributed Team-Management
+
+
+
+* What is Continuous Integration?
+
+   Continuous Integration is the process of automating the building and testing of code every time one of the team members commits to version control.
+
+   - CI stands for (Continuous Integration)
+
+   -CD (Continuous Delivery as well as Deployment, Delivery is also known as release)
+
+
+                            commit		     Initiate CI process
 		         |---------------->Source code-----------------|
 			 |					       |
 			 |					       |
-		    Development	 	{work-flow}			      Build
+		    Development					      Build	
 			 |					       |
 			 |					       |
 			 |-----------------Testing---------------------|
 				Report			Test
+ 
+
+* Popular Continuous Integration Tools (or) CICD
+
+     - GitLab
+
+     - Jenkins
+
+     - Codeship
+
+     - Travis CI
+
+     - Bamboo
+
+     - TeamCity
+
+
+
+* CI/CD Services in AWS
+
+   AWS provides several services for CI/CD such as:
+
+      - CodeCommit
+
+      - CodeDeploy
+
+      - CodeBuild
+
+      - CodePipeline
+
+      - CodeGuru
+
+
+
+* CI/CD Services in Azure
+
+  Azure provides the following services:
+
+    - Azure Boards
+
+    - Azure Pipeline
+
+    - Azure Repos
+
+    - Azure Test
+
+    - Azure Artifacts
+
+
+
+* What is Jenkins?
+
+Jenkins is a continuous integration tool that manages and controls processes such as planning, coding, building, testing, deploying, operating, and monitoring in a DevOps environment.
+
+  - Jenkins is an automation server but will not do anything on its own until informed to do so.
+
+  - Jenkins is developed using Java code.
+
+
+
+* Why Jenkins is So Popular?
+
+  1. Open source
+
+  2. Good plugin support
+
+  3. Good community support
+
+  4. Fast and reliable
+
+  5. Good OS support
+
+  6. Scripted Builds
 
 
 
 
-* Popular continuous integration tools (or) CICD :
-
-     → Git lab                    → Jenkins
-
-     → codeship                   → Travis CI
-
-     → Bamboo                     → Teamcity
-
-
-
-* From aws cloud if we wanted to perform CI/CD, there are various services like code-commit, code-deploy, code-build, code-pipeline, code-guru.
-
-
-* In Azure - Azure Boards, Azure pipeline, Azure Repos, Azure Test, Azure Artifacts.
-
-
-
-
-* What is Jenkins : Jenkins is a continuous integration which manages and control processes such as plan, code, build, test, deploy, operate and monitor in DevOps Environment.
-
-                     → Jenkins is an automation server but it will not do anything on it's own until we inform to Jenkins.
-                    
-                     → Jenkins tool is developed by java code.
-
-
-
-
-* Why Jenkins is so popular :
-
-     1. open source
-
-     2. good plugin support
-
-     3. good community support
-
-     4. Fast ans Reliable
-
-     5. good OS support
-
-     6. Scripted Builds
-
-
-
-
-
-* Jenkins Architecture: Source control management
-
+ * Jenkins Architecture: Source control management
+ 
                   git --→ Jenkins                                         
                             |                                             
                             |                           ________________  
- ___________________________________________________    |               |  | → Test Environment
+___________________________________________________    |               |  | → Test Environment
 |  ________________    _______________   ________  |    |Is branch test,|  |
 | | Build+unitTest | → |Function Test| → |Deploy|  |    |release        |  | → Release Evironment
 | ------------------   ---------------   --------  |    |     (or)      |  |
 ____________________________________________________    | production    |  | → Production Environment
                                                         ------------------ |
-  
+
+
+* Why We Need Plugins?
+
+Plugins provide extra functionalities.
 
 
 
-* Why we need plugins.?
+* Plugin Management in Jenkins
 
-Ans: It is to have Extra functionalities
+  1. Update: Shows updates to plugins already installed
 
+  2. Available: Shows plugins that are available for installation
 
+  3. Installed: Displays plugins that are installed and have no updates
 
-
-* Plugins Management in Jenkin's:
-
- 
-             |→ Update -→ Shows updates to plugins already installed 
-             |
-             |→ Available -→ Shows plugins that are available for installation
-Tabs--→      |
-             |→ Installed -→ Displays plugins installed that have no updates
-             |
-             |→ Advanced -→ Lists configuration of hhtp proxy allows manual upload of plugin and URL of plugin site.
+  4. Advanced: Lists configuration of HTTP proxy, allows manual upload of plugins, and URL of plugin site
 
 
 
+* Proxy Configuration in Jenkins
 
-* proxy : In Real time we cannot install the plugin 
-          
-          → reason : might be challenges with proxy setting's as well as VPN(virtual private Netwok) in orderd to avoid we should configure HTTP proxy in Jenkins plugin of advanced tab.
-
+In real-time scenarios, installing plugins might face challenges due to proxy settings or VPN (Virtual Private Network). To avoid such issues, configure the HTTP proxy in Jenkins under the Advanced tab.
 
 
 
-* How to install Jenkins on windows:
+* How to Install Jenkins on Windows
 
-    Different ways to installation
+  Jenkins can be installed using various methods:
 
-       → using Docker
+    1. Using Docker
 
-       → using Kubernetes
+   2. Using Kubernetes
 
-       → using war file
+   3. Using WAR file
 
-       → offline installation (Linux,ubuntu,macos).
+   4. Offline installation (Linux, Ubuntu, macOS)
 
 
 
- 
 * Prerequisites:
 
-    Minimum hardware requirements:
+  - Minimum hardware requirements:
 
-       → 256 MB of RAM
+      - 256 MB of RAM
 
-       → 1GB of drive space (although 10GB is a recommended minimum if running Jenkins as a Docker container)
+      - 1GB of drive space (although 10GB is recommended if running Jenkins as a Docker container)
 
+ - Recommended hardware configuration for small teams:
+      - 4GB+ of RAM
 
-    Recommended hardware configuration for small team:
-
-       → 4GB + of RAM
-
-       → 50GB + of drive space
-
-       → A system running Windows 10
-
-       → The latest copy of Java Development Kit or Java Runtime Environment installed
-
-       → Access to an account with administrator privileges
+     - 50GB+ of drive space
+    
+     - A system running Windows 10
+   
+     - The latest copy of Java Development Kit (JDK) or Java Runtime Environment (JRE)
+  
+     - Access to an account with administrator privileges
 
 
 
-* We can dowmload Jenkins on windows using the URL(https://www.jenkins.io/download/) then we can choose LTS(Long Term Support)
+* Jenkins Download Link
 
-
-* We can restart by safe with using the url : localhost:8080\safeRestart
-
-* slaves, Nodes, Agents this terminologies are same.
+You can download Jenkins for Windows from [this URL](https://www.jenkins.io/download/) and choose the LTS (Long Term Support) version.
 
 
 
+* Restart Jenkins
+
+To safely restart Jenkins, use the URL: 
+
+localhost:8080/safeRestart
 
 
-             
-             
+
+ Terminology: Slaves, Nodes, Agents
+
+The terms "Slaves," "Nodes," and "Agents" in Jenkins are the same and interchangeable.
