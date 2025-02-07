@@ -1,0 +1,97 @@
+                                                       * Jenkins Installation Windows Machine *
+
+
+
+
+* Step 1 : Browse to the official Jenkins download page(https://www.jenkins.io/download/).
+
+          → After open the Jenkins page, under the downloading Jenkins section, is a list of installers for the LTS(Long-Term-Support) version of Jenkins
+
+          → Click on the windows Text(link), it will starts download's the server.
+
+
+
+
+* Step 2: Browse to the JDK-21 download page(https://www.oracle.com/in/java/technologies/downloads/)
+
+          → After open the Page, under the java downloads we have an java versions such as Jdk21,jdk23.
+
+          → Click on jdk 21 version and choose windows then Download "x64 Installer", It will start the download jdk21 version.
+
+
+
+* Step 3: After Downloading the files Firstly we can give a path of jdk21 version in (windows System-Environments variables)
+
+          → Open windows System-Environments variables in windows search
+ 
+          → select "Environments variables", then click on new in "system varaibles" and give a variablename and variablevalue(path of jdk-file) then click on "ok".
+          
+          → Now choose a "path" in syaytem variables and click on "edit" then click on "new" and add a path of jdk-21 version file.
+
+
+
+* Step 4: Now we can install and the Jenkins file after the installation.
+
+          → Double click on Jenkins file which is downloaded
+
+          → Now we can setup wizard it will install the Jenkins on your computer so click on "Next"
+
+          → In the Destination Folder it shows path of a Jenkins file check and click on "Next"
+
+          → In the service logon credentials , choose "run service as a local system" then click on "Next"
+
+          → In the port section, click on "test port" then click on "Next"
+
+          → In Jenkins version setup ( select a path of jdk which is downloaded new version) then "click on Next"
+
+          → In the custom setup by default Jenkins once check then click "Next"
+
+          → In the ready install just click on the "Install"
+
+          → Now it asks do you want to install click "Yes"
+
+
+
+* Step 5: After completing the installation process, you have to unblock Jenkins before you customize and start using it.
+
+          → After installation of Jenkins enter URL(localhost:8080) on your browser.
+
+          → Navigate to the location on your system specified by the unlock Jenkins page.
+
+            (Copy the password from location [entire path]: C:\ProgramData\Jenkins\.jenkins\secrets\initialAdminPassword, where the admin password is stored in a file.
+
+          → To read the data of that file, use the cat (Command) in the terminal like gitbash.
+
+          → Copy the password from the initial admin password file (e.g., Gd2dZd... Alphanumeric).
+
+          → Paste the password in the Administrator password field on the unlock Jenkins page and click Continue to proceed.
+
+          → once you unlock Jenkins, customize and prepare the Jenkins environment.
+
+
+
+* Step 6:
+
+      → Click on the Install suggested plugins button to have Jenkins automatically install the most frequently used plugins.
+
+      → After Jenkins finishes installing the plugins, enter the server information on the Create First Admin User page. Click Save and Continue to proceed.
+
+                  Username: admin
+
+                  Password: adminn123
+
+                  Confirm Password: admin123
+
+                  Full Name: your Name
+
+                  Email Address: Your email
+
+
+      
+
+ Notes : If we want to stop or start the Jenkins server on windows.
+
+         → In windows search bar-search for the "services" and choose Jenkins.
+
+         → After selecting click on Jenkins it show's option like "Stop,Restart,start"
+

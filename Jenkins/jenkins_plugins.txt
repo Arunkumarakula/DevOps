@@ -1,0 +1,245 @@
+06/02/2025-Jenkins
+
+
+* Plugins: (To have a fuctionality)
+
+   → plugins can used to add, remove, disable or enable plugins, that can extend the functionality of Jenkins.
+
+   → when we install plugins in automatic way, the plugins extension is JPI(Jenkins plugins)
+
+   → when we install plugins manuall way, the plugins extension is HPI(Hudson plugin)
+
+
+
+* Plugin Installation : There are two way's to install plugin's
+
+                        1. Automatically
+ 
+                        2. Manually
+
+
+
+1. Automatically :
+
+   → once we login Jenkins gui, left side you will see the option "manage Jenkins", click on manage Jenkins, in the top "system configuration", can see the plugins.
+
+                    Jenkins gui → manage Jenkins → system configuration → pulgins.
+
+
+   → Click on plugins, then click on available plugins and search for the plugin which is required.
+
+
+   →  select the plugin under the list, once selected the plugin list of plugin will be highlated then install the plugin.
+
+
+
+2. Manually :
+
+   → Under the pulgins tab, go for available plugin and search for the plugin, click on the plugin which is required.
+
+   → once you click on the plugin, new tab will be open then click in "Release", under the release you will see the various versions of the pulgins.
+
+   → go for the plugin which is required specific version
+
+   → under install option click on "direct link"
+
+   → once you click on the direct plugin will get downloaded to our local machine (or) system
+
+   → when we download plugin in manuall way again we need to deploy it to Jenkins
+
+   → In the gui plugins tab's click on advanced settings, choose file to upload which is downloaded to local machine 
+
+
+
+
+* How to uninstall the plugin..?
+
+   Manage Jenkins → plugins → installed plugins
+  
+    → search for plugins which we wanted to uninstall
+
+    → select the plugin and then uninstall button will be highlighted
+
+    → once clicked on uninstall, plugin will get unistall.
+
+
+
+* How to update the plugin..?
+
+   Manage Jenkins → plugins → Installed plugins
+
+    → Select the plugin and then update button will be highlighted
+
+    → once clicked on updated, plugin will get updated.
+
+
+     Note : In real time we should not update the plugin directly 
+
+     Reason : their might be challenges will be encountered, it will be recommended to update the plugin with in our local machines, where other team members will not be effected(if 
+              anything goes wrong)
+
+
+
+* How to create the user..?
+
+   Manage Jenkins → security → users(create, delete, modify users that can log in to this Jenkins)
+
+    → click on user you can see the "+ user", Now it asks the user's detail (Name, password, confirm password, email), then click on create user.
+
+
+
+* How to set permissions to thr user.?
+
+   Manage Jenkins → security(secure jebkins define who is allowed to access user system)
+
+     → Click on that, then you will be seeing this "Authoriziation" tab.
+
+     → Add user (To add user), it asks user-id
+
+     → You can see the created user's in existing users.
+
+    → Then give required permission to the user by checking the box(The minimum access to give is overall Read)
+
+
+* By default what ever we create users for Jenkins will get stored in Jenkins own user database.
+  
+    → Jenkins own user database is sutaible for samller set-up
+
+    → The other option is LDAP(lightweight Directory Access Protocol)
+
+
+
+ To secure our Jenkins server we can below stratagies:
+
+  1. Authorization stratagies:
+   
+            → By default will be seeing project-based matrix authorization statragy, with this we can manage the authorization based on the options available under strategy.
+
+              eg : credentials, Agent, Job, Run, View..etc
+
+
+  2. Matrix authorization strategy:
+  
+            → Matrix authorization allows configuring the lowest level permissions, such as starting new buils, configuring items, or deleting them individually.
+
+
+
+  3. RBAC(Role Based Acess Control): on of the way where we can secure the Jenkins
+
+
+
+
+* Jenkins project (project (or) job jOB, both are same (combination of one or more task)
+
+    1. Free Style project: 
+
+         →  Classic, general-purpose job type that checks out from up to one SCM, executes build steps serially, followed by post-build steps like archiving artifacts and sending email 
+     
+            notifications.
+
+
+     2. pipeline:
+
+         →  Orchestrates long-running activities that can span multiple build agents. Suitable for building pipelines(formerly known as workflows) and /or organizing complex activities
+ 
+            that do not easily fit in free-style job type.
+
+     
+     3. multi-configuration project:
+ 
+         → Suitable for projects that need a large number of different configurations, such as testing on multiple environments, platform-specific builds, etc.
+
+
+     4. Folder:
+
+         → Creates a container that stores nested items in it. Useful for grouping things together. Unlike view, which is just a filter, a folder creates a separate namespace, so you can
+      
+           have multiple things of the same name as long as they are in different folders
+
+
+     5. Multibranch pipeline:
+
+         → creates a set of pipeline projects according to detected branches in one SCM repository.
+
+
+     6. Organization Folder:
+
+          → Creates a set of multibranch project subfolders by scanning for repositories.
+
+
+
+* How to create the job or project:
+
+    → In Jenkins gui to the leftside click on this "Newitem".
+   
+    → click on New item give the enter an item or job name
+
+    → then select an item type 
+
+  
+
+* the job configuration is consists of general(where we can give information or description) about the project. 
+
+ → source code management(where we will be passing urls of the repositories),
+
+ → Build triggers(in what way we wanted to trigger or build that job),
+
+ → build environment, build steps (where we can add tasks),
+
+ → post-build actions
+
+
+
+* How to create free style basic job..?
+
+   → new item → enter item name 
+
+   → select item type and click on ok
+
+   → go to the build steps of the job configuration 
+
+   → click on add build step drop down botton
+
+   → select execute windows batch command type(dir)
+
+   → click on save
+
+   → click on build now(left side option)
+
+   → for output check console output
+
+
+
+
+* Blue ocean.?
+
+   Blue ocean rethinks the Jenkins user experience designed from the ground up forjenkins pipeline and compatiable with freestyle jobs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+     
+
+
+
