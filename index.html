@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AWS MCQ Quiz</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .question { margin-bottom: 20px; }
+    .question h3 { margin: 0 0 10px; }
+    button { margin-top: 20px; padding: 10px 20px; font-size: 16px; }
+  </style>
+</head>
+<body>
+  <h1>AWS Quiz – EC2, IAM, S3, VPC</h1>
+  <form id="quizForm">
+
+    <!-- Example Question -->
+    <div class="question">
+      <h3>1. Which AWS service is used to run virtual servers?</h3>
+      <label><input type="radio" name="q1" value="a"> S3</label><br>
+      <label><input type="radio" name="q1" value="b"> EC2</label><br>
+      <label><input type="radio" name="q1" value="c"> IAM</label><br>
+      <label><input type="radio" name="q1" value="d"> RDS</label>
+    </div>
+
+    <div class="question">
+      <h3>2. What is the default state of a new S3 bucket?</h3>
+      <label><input type="radio" name="q2" value="a"> Public</label><br>
+      <label><input type="radio" name="q2" value="b"> Private</label><br>
+      <label><input type="radio" name="q2" value="c"> Encrypted</label><br>
+      <label><input type="radio" name="q2" value="d"> Public with ACL</label>
+    </div>
+
+    <!-- Add more questions similarly up to 50 -->
+
+    <button type="button" onclick="checkAnswers()">Submit</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    function checkAnswers() {
+      let score = 0;
+      if (document.querySelector('input[name="q1"]:checked')?.value === 'b') score++;
+      if (document.querySelector('input[name="q2"]:checked')?.value === 'b') score++;
+      // Add answer checks for remaining questions
+
+      document.getElementById("result").innerHTML = "Your score: " + score + " / 50";
+    }
+  </script>
+</body>
+</html>
 
